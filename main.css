@@ -1,3 +1,58 @@
 body{
+    
+}
+
+button{
+    padding: 10px 20px;
+    background-color: rgb(44, 69, 149);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    transition: all 2s;
+
+}
+
+button:hover{
+    translate:15%;
+    transform: rotate3d(2,3,4,30deg);
+    margin: 0 15px;
+    
+    
+}
+
+button:active{
+    transition: all 1s;
+    transform: scale(0.8);
+    transform: rotate3d(0,0,0,0);
+}
+
+div{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10,10px);
+    gap: 2px;
+}
+
+.grid >div{
+    width: 10px;
+    height: 10px;
     background-color: aquamarine;
+    margin: 0;
+
+}
+
+.grid > div:hover {
+    background-color: blue;
+
+}
+
+.grid > div:active{
+    perspective: 100px;
 }
